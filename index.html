@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Taply Datafono iOS — Instalacion Directa Tap to Pay NFC</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #070b14;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      width: 100%;
+      max-width: 440px;
+      background: #0f172a;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 24px;
+      padding: 28px 24px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .spec-box {
+      background: #090e1a;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+    .spec-box strong {
+      color: #34d399;
+    }
+    .btn-primary {
+      display: block;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #022c22;
+      font-weight: 900;
+      font-size: 16px;
+      padding: 18px 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(16, 185, 129, 0.35);
+      margin-bottom: 12px;
+    }
+    .btn-secondary {
+      display: block;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      background: #1e293b;
+      color: #e2e8f0;
+      border: 1px solid #334155;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      margin-bottom: 10px;
+    }
+    .steps {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid #1e293b;
+      font-size: 12px;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    .steps li {
+      margin-left: 16px;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">Permiso NFC Activo · PR06102F2</div>
+    <h1>Taply Datafono iOS</h1>
+    <p class="subtitle">
+      Compilacion oficial firmada con el permiso <strong>Tap to Pay on iPhone (proximity-reader.payment.acceptance)</strong> autorizado para tu iPhone.
+    </p>
+
+    <div class="spec-box">
+      <div>Bundle ID: <strong>com.taplyos.terminal</strong></div>
+      <div>Entitlement NFC: <strong>proximity-reader.payment.acceptance = true</strong></div>
+      <div>iPhone Autorizado: <strong>00008130-000865443003401C</strong></div>
+      <div>Version: <strong>1.0.39 (Development)</strong></div>
+    </div>
+
+    <a class="btn-primary" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/vazquezsisi00-lgtm/taply-ios-ota/main/manifest.plist">
+      INSTALAR EN IPHONE (1 TOQUE)
+    </a>
+
+    <a class="btn-secondary" href="https://raw.githubusercontent.com/vazquezsisi00-lgtm/taply-ios-ota/main/App-TapToPay-Dev.ipa">
+      Descargar archivo .IPA directo (54 MB)
+    </a>
+
+    <ol class="steps">
+      <li><strong>Paso 1:</strong> Si tienes instalada la app desde TestFlight, eliminala primero de la pantalla de inicio para que iOS permita instalar esta version firmada con Tap to Pay Development.</li>
+      <li><strong>Paso 2:</strong> Abre esta pagina en <strong>Safari</strong> desde tu iPhone y toca el boton verde <strong>INSTALAR EN IPHONE (1 TOQUE)</strong>, luego confirma <strong>Instalar</strong>.</li>
+      <li><strong>Paso 3:</strong> Si tu iPhone pide activar el Modo Desarrollador, ve a <strong>Ajustes &gt; Privacidad y seguridad &gt; Modo desarrollador</strong>.</li>
+    </ol>
+  </div>
+</body>
+</html>
